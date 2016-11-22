@@ -99,39 +99,64 @@
 	<!-- /Highlights -->
 	<!-- container -->
 	<div class="container">
-		<h2 class="text-center top-space">旗下项目</h2>
+		<h2 class="text-center top-space">旗下项目 (排名不分先后)</h2>
 		<br>
-		<div class="jumbotron top-space">
-			<h3>baidu/bfs</h3>
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">查看更多 »</a></p>
-  		</div>
-  		<div class="jumbotron top-space">
-			<h3>baidu/tera</h3>
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">查看更多 »</a></p>
-  		</div>
-  		<div class="jumbotron top-space">
-			<h3>pingcap/tidb</h3>
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">查看更多 »</a></p>
-  		</div>
-  		<div class="jumbotron top-space">
-			<h3>pingcap/tikv</h3>
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">查看更多 »</a></p>
-  		</div>
-  		<div class="jumbotron top-space">
+
+        <div class="jumbotron top-space">
 			<h3>qihoo360/zippelin</h3>
 			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
      		<p class="text-right"><a class="btn btn-primary btn-large">查看更多 »</a></p>
   		</div>
-	</div>	<!-- /container -->
+
+		<div class="jumbotron top-space">
+			<h3>baidu/bfs</h3>
+			<h4>
+BFS 是一个为实时应用设计的分布式文件系统，通过分布化的 NameServer 解决元数据单点问题，通过多机房的副本放置解决数据可靠性与可用性问题，除此之外，还针对读写延迟进行了特别的优化，当前支撑了包括百度网页库和用户行为分析在内的很多实时数据分析业务。
+            </h4>
+     		<p class="text-right"><a class="btn btn-primary btn-large"
+                href="https://github.com/baidu/bfs">查看更多 »</a></p>
+  		</div>
+  		<div class="jumbotron top-space">
+			<h3>baidu/tera</h3>
+			<h4>
+Tera 是一个高性能、可伸缩的结构化数据存储系统，被设计用来管理搜索引擎万亿量级的超链与网页信息。为实现数据的实时分析与高效访问，我们使用按行键、列名和时间戳全局排序的三维数据模型组织数据，使用多级 Cache 系统，充分利用新一代服务器硬件大内存、SSD 盘和万兆网卡的性能优势，做到模型灵活的同时，实现了高吞吐与水平扩展。
+            </h4>
+     		<p class="text-right"><a class="btn btn-primary btn-large"
+                href="https://github.com/baidu/tera">查看更多 »</a></p>
+  		</div>
+  		<div class="jumbotron top-space">
+			<h3>pingcap/tidb</h3>
+			<h4>
+TiDB 是基于 Google F1 论文实现的分布式 NewSQL 数据库，定位是 100% 的 OLTP + 80%的 OLAP。
+TiDB 是开源且 MySQL 兼容的，基本上就是一个可以无限水平扩展的
+MySQL，提供分布式事务、跨节点
+join、保证跨数据中心的数据的强一致性、故障自恢复的高可用、提供更快的查询和写入速度；对业务没有任何侵入性，简化开发，利于维护和平滑迁移。TiDB
+与 TiKV 配合使用，作为 TiKV 的 SQL 层。
+            </h4>
+     		<p class="text-right"><a class="btn btn-primary btn-large"
+                href="https://github.com/pingcap/tidb">查看更多 »</a></p>
+  		</div>
+  		<div class="jumbotron top-space">
+			<h3>pingcap/tikv</h3>
+			<h4>
+TiKV 是基于 Google Spanner 论文实现的分布式 Key Value
+数据库，支持弹性水平扩展以及高性能的跨行 ACID 分布式事务。
+            </h4>
+     		<p class="text-right"><a class="btn btn-primary btn-large"
+                href="https://github.com/pingcap/tikv">查看更多 »</a></p>
+  		</div>
+  	</div>	<!-- /container -->
 
 	<!-- container -->
 	<div class="container">
 		<h2 class="text-center top-space">参与公司</h2>
 		<br>
+        <a href="http://baidu.com"><img class="logo"
+                                 src="assets/images/baidu.png"></img></a>
+        <a href="http://pingcap.com"><img class="logo"
+                                   src="assets/images/pingcap.png"></img></a>
+        <a href="http://360.cn"><img class="logo"
+                                  src="assets/images/360.jpg"></img></a>
 	</div>	<!-- /container -->
 	
 	<footer id="footer" class="top-space">
