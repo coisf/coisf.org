@@ -14,6 +14,15 @@
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        table , tr, td, th{
+            border: solid 1px #666;
+            min-width: 150px;
+            text-align: center;
+            padding: 0.5em;
+        }
+    </style>
+
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -58,6 +67,24 @@
 			<!-- /Article -->
 		</div>
 	</div>	<!-- /container -->
+
+    <footer id="footer" class="top-space">
+		<div class="footer1 sticky-footer">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-8 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2016, COISF. Designed by PingCAP.
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
     <script type="text/template" id="markdown-src">
 ## 顶级项目
 
@@ -65,29 +92,84 @@
 
 BFS 是一个为实时应用设计的分布式文件系统，通过分布化的 NameServer 解决元数据单点问题，通过多机房的副本放置解决数据可靠性与可用性问题，除此之外，还针对读写延迟进行了特别的优化，当前支撑了包括百度网页库和用户行为分析在内的很多实时数据分析业务。
 
-#### PMC 成员:
-TBD
+#### PMC:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 雷丽媛 (leader) | [leily@coisf.org](mailto:leily@coisf.org) |
+| 颜世光 | [yansg@coisf.org](mailto:yansg@coisf.org) |
+| 杨策| [yangce@coisf.org](mailto:yangce@coisf.org) | 
+
+#### Committers:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 雷丽媛 (leader) | [leily@coisf.org](mailto:leily@coisf.org) |
+| 颜世光 | [yansg@coisf.org](mailto:yansg@coisf.org) |
+| 杨策| [yangce@coisf.org](mailto:yangce@coisf.org) | 
 
 ### [baidu/tera](github.com/baidu/tera)
 
 Tera 是一个高性能、可伸缩的结构化数据存储系统，被设计用来管理搜索引擎万亿量级的超链与网页信息。为实现数据的实时分析与高效访问，我们使用按行键、列名和时间戳全局排序的三维数据模型组织数据，使用多级 Cache 系统，充分利用新一代服务器硬件大内存、SSD 盘和万兆网卡的性能优势，做到模型灵活的同时，实现了高吞吐与水平扩展。
 
-#### PMC 成员:
-TBD
+#### PMC:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 李康 (leader)| [likang@coisf.org](mailto:likang@coisf.org) |
+| 蔡杰明| [caijm@coisf.org](mailto:caijm@coisf.org) |
+| 黄金宵| [huangjx@coisf.org](mailto:huangjx@coisf.org) |
+| 颜世光 | [yansg@coisf.org](mailto:yansg@coisf.org) |
+
+#### Committers:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 李康| [likang@coisf.org](mailto:likang@coisf.org) |
+| 蔡杰明| [caijm@coisf.org](mailto:caijm@coisf.org) |
+| 黄金宵| [huangjx@coisf.org](mailto:huangjx@coisf.org) |
+| 颜世光 | [yansg@coisf.org](mailto:yansg@coisf.org) |
 
 ### [pingcap/tidb](github.com/pingcap/tidb)
 
 TiDB 是基于 Google F1 论文实现的分布式 NewSQL 数据库，定位是 100% 的 OLTP + 80%的 OLAP。 TiDB 是开源且 MySQL 兼容的，基本上就是一个可以无限水平扩展的 MySQL，提供分布式事务、跨节点 join、保证跨数据中心的数据的强一致性、故障自恢复的高可用、提供更快的查询和写入速度；对业务没有任何侵入性，简化开发，利于维护和平滑迁移。TiDB 与 TiKV 配合使用，作为 TiKV 的 SQL 层。
 
-#### PMC 成员:
-TBD
+#### PMC:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 申砾 (leader) | [shenli@coisf.org](mailto:shenli@coisf.org) |
+| 刘寅 | [liuyin@coisf.org](mailto:liuyin@coisf.org) |
+| 黄东旭 | [huangdx@coisf.org](mailto:huangdx@coisf.org) |
+| 崔秋 | [cuiqiu@coisf.org](mailto:cuiqiu@coisf.org) |
+
+#### Committers:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 申砾 | [shenli@coisf.org](mailto:shenli@coisf.org) |
+| 刘寅 | [liuyin@coisf.org](mailto:liuyin@coisf.org) |
+| 黄东旭 | [huangdx@coisf.org](mailto:huangdx@coisf.org) |
+| 崔秋 | [cuiqiu@coisf.org](mailto:cuiqiu@coisf.org) |
+
 
 ### [pingcap/tikv](github.com/pingcap/tikv)
 
 TiKV 是基于 Google Spanner 论文实现的分布式 Key Value 数据库，支持弹性水平扩展以及高性能的跨行 ACID 分布式事务。
 
-#### PMC 成员:
-TBD
+#### PMC:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 唐刘 (leader) | [cuiqiu@coisf.org](mailto:cuiqiu@coisf.org) |
+| 刘奇 | [liuqi@coisf.org](mailto:cuiqiu@coisf.org) |
+
+#### Committers:
+
+|     姓名    |    邮箱   |
+|:------|:-------|
+| 唐刘 | [cuiqiu@coisf.org](mailto:cuiqiu@coisf.org) |
+| 刘奇 | [liuqi@coisf.org](mailto:cuiqiu@coisf.org) |
 
 ## 孵化器项目
 
@@ -105,8 +187,10 @@ TBD
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var tmpl = $("#markdown-src").html();
-			var converter = new showdown.Converter(),
-			    text      = tmpl,
+			var converter = new showdown.Converter();
+            converter.setOption("tables", true);
+
+			var text      = tmpl,
 			    html      = converter.makeHtml(text);
 			$("#markdown-html").html(html);
 		});
